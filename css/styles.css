@@ -21,33 +21,37 @@ header {
   width: 100%;
   min-height: 10vh;
   padding: 2rem 0;
+  position: fixed;
+  top: 0;
   background-color: #016fb9;
   color: #f4f5f6;
 }
 header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
 }
 
 main {
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
-  margin: auto;
-  padding: 2rem 0;
+  margin: 0.5rem auto;
+  padding: 0 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
   border: none;
+  border-radius: 0.4rem;
   box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.4);
   color: #171717;
   background-color: #b9ddf3;
 }
 main section {
-  width: 90%;
-  padding: 1rem;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.8rem 1rem;
   border-radius: 0.3rem;
   transition: all 0.6s ease-in-out;
 }
@@ -56,7 +60,7 @@ main section:hover {
   box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.4);
 }
 main section .text {
-  width: 100%;
+  padding: 1rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +68,7 @@ main section .text {
   transition: all 0.6s ease-in-out;
 }
 main section .text h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   text-align: center;
   margin: 0 auto;
@@ -94,32 +98,50 @@ main section .text button.active i {
   transform: rotate(180deg);
 }
 main section .para {
-  width: 100%;
-  min-height: 10vh;
-  padding: 1rem;
-  text-align: center;
-  display: none;
+  height: 0;
+  opacity: 0;
+  padding: 0rem 1rem;
+  overflow: hidden;
+  text-align: justify;
   transition: all 0.6s ease-in-out;
 }
 main section .para.active {
+  min-height: 170px;
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 main section .para p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
-@media (max-width: 768px) {
-  main {
-    width: 700px;
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
   }
-}
-@media (max-width: 500px) {
+
   main {
-    width: 100%;
+    width: 70%;
+    padding: 0rem 2rem;
+  }
+  main section {
+    width: 90%;
+    padding: 0.5rem 1.5rem;
+  }
+  main section .text h2 {
+    font-size: 1.2rem;
+  }
+  main section .para {
+    padding: 0.5rem 2.5rem;
+  }
+  main section .para.active {
+    min-height: 120px;
+  }
+  main section .para p {
+    font-size: 1.2rem;
   }
 }
 
