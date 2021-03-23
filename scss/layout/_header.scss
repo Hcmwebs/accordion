@@ -1,0 +1,17 @@
+@use '../abstracts/' as  *;
+
+header{
+  width: 100%;
+  min-height: 10vh;
+  padding: 2rem 0;
+  background-color: $headerBgColor;
+  color:$textSecondaryColor;
+
+
+  h1{
+    font-size: 3rem;
+    font-weight:300;
+    text-align: center;
+  }
+
+}
