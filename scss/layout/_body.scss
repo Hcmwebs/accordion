@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+
+body{
+  background-color:$backgroundColor;
+  font-family: $font-stack;
+  font-size: $fontSize;
+    @include flexCenter(row);
+    width: 100%;
+    min-height:100vh;
+}
