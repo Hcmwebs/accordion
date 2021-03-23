@@ -7,7 +7,8 @@
   }
   main{
     width:70%;
-    padding: 0rem 2rem;
+    margin: 5rem auto;
+    padding: 2rem;
 
     section{
       width: 90%;
@@ -20,7 +21,7 @@
       }
 
       .para{
-        padding: 0.5rem 2.5rem;
+
         &.active{
           min-height: 120px;
         }

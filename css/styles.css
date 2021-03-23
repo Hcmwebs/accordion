@@ -19,10 +19,8 @@ body {
 
 header {
   width: 100%;
-  min-height: 10vh;
+  min-height: 5vh;
   padding: 2rem 0;
-  position: fixed;
-  top: 0;
   background-color: #016fb9;
   color: #f4f5f6;
 }
@@ -33,10 +31,10 @@ header h1 {
 }
 
 main {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
-  margin: 0.5rem auto;
-  padding: 0 0.5rem;
+  margin: 2rem auto;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,14 +68,12 @@ main section .text {
 main section .text h2 {
   font-size: 1.1rem;
   font-weight: 300;
-  text-align: center;
-  margin: 0 auto;
+  text-align: left;
 }
 main section .text button {
   font-family: inherit;
   font-weight: 300;
   font-size: 1.3rem;
-  margin-left: 2rem;
   padding: 0.6rem;
   display: grid;
   place-items: center;
@@ -100,13 +96,12 @@ main section .text button.active i {
 main section .para {
   height: 0;
   opacity: 0;
-  padding: 0rem 1rem;
   overflow: hidden;
   text-align: justify;
   transition: all 0.6s ease-in-out;
 }
 main section .para.active {
-  min-height: 170px;
+  min-height: 150px;
   opacity: 1;
   display: flex;
   justify-content: center;
@@ -125,7 +120,8 @@ main section .para p {
 
   main {
     width: 70%;
-    padding: 0rem 2rem;
+    margin: 5rem auto;
+    padding: 2rem;
   }
   main section {
     width: 90%;
@@ -133,9 +129,6 @@ main section .para p {
   }
   main section .text h2 {
     font-size: 1.2rem;
-  }
-  main section .para {
-    padding: 0.5rem 2.5rem;
   }
   main section .para.active {
     min-height: 120px;
