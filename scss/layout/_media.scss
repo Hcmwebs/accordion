@@ -1,36 +1,40 @@
-@media(min-width:768px){
-  header{
+@use '../abstracts/' as  *;
 
-    h1{
+@media (min-width: 768px) {
+  .container {
+    @include flexCenter(column);
+  }
+  header {
+    position: fixed;
+    top: 0;
+
+    h1 {
       font-size: 3rem;
     }
   }
-  main{
-    width:70%;
-    margin: 5rem auto;
+  main {
+    width: 70%;
+    // margin: 5rem auto;
     padding: 2rem;
 
-    section{
+    section {
       width: 90%;
 
-
-      .text{
-        h2{
+      .text {
+        h2 {
           font-size: 1.2rem;
         }
       }
 
-      .para{
-
-        &.active{
+      .para {
+        &.active {
           min-height: 150px;
         }
 
-        p{
+        p {
           font-size: 1.2rem;
         }
       }
     }
   }
-
 }

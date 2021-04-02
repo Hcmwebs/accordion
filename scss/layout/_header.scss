@@ -1,17 +1,15 @@
 @use '../abstracts/' as  *;
 
-header{
+header {
   width: 100%;
-  min-height: 5vh;
   padding: 2rem 0;
   background-color: $headerBgColor;
-  color:$textSecondaryColor;
+  color: $textSecondaryColor;
+  
 
-
-  h1{
+  h1 {
     font-size: 2rem;
-    font-weight:300;
+    font-weight: 300;
     text-align: center;
   }
-
 }

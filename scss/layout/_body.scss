@@ -1,12 +1,11 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
 
-
-body{
-  background-color:$backgroundColor;
+body {
+  background-color: $backgroundColor;
   font-family: $font-stack;
   font-size: $fontSize;
-    @include flexCenter(column);
-    width: 100%;
-    min-height:100vh;
+  @include flexCenter(column);
+  width: 100%;
+  min-height: 100vh;
 }

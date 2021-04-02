@@ -1,105 +1,87 @@
 @use '../abstracts/' as  *;
 
-main{
+main {
   width: 90%;
   max-width: 450px;
-  margin: 2.5rem auto;
-  padding: 1rem ;
+  margin: 1rem auto;
+  padding: 1rem;
   @include flexCenter(column);
   gap: 0.2rem;
   border: none;
   border-radius: 0.4rem;
   box-shadow: $boxShadow;
-  color:$textColor;
-  background-color:$textSecondaryColor;
+  color: $textColor;
+  background-color: $textSecondaryColor;
 
-  section{
+  section {
     width: 100%;
     margin: 1rem auto;
-    padding: 0.5rem 0rem ;
+    padding: 0.5rem 0rem;
     border-radius: 0.3rem;
-    border : none;
+    border: none;
     transition: all 0.6s ease-in-out;
 
-
-
     &:hover {
-
       box-shadow: $boxShadow;
     }
 
-
-    .text{
-
-      padding:0rem  0.5rem;
+    .text {
+      padding: 0rem 0.5rem;
       @include flexSpaceBetween(row);
       transition: all 0.6s ease-in-out;
 
-
-      h2{
-      font-size: 1.1rem;
-      font-weight: 300;
-      text-align: left;
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: left;
       }
 
-      button{
+      button {
         font-family: inherit;
-        font-weight:300;
-        font-size:1.4rem;
+        font-weight: 300;
+        font-size: 1.4rem;
         margin-left: auto;
         padding: 0.6rem;
         @include grid(center);
-        background-color:lighten($headerBgColor, 10);
+        background-color: lighten($headerBgColor, 10);
         color: $textSecondaryColor;
         cursor: pointer;
         outline: none;
-        border:none;
+        border: none;
         transition: all 0.6s ease-in-out;
 
-
-        &:hover{
-          background-color:darken($headerBgColor, 10);
-
+        &:hover {
+          background-color: darken($headerBgColor, 10);
         }
 
+        &.active {
+          background-color: $secondaryBgColor;
 
-        &.active{
-          background-color:$secondaryBgColor;
-
-          i{
+          i {
             transform: rotate(180deg);
           }
         }
       }
     }
 
-
-    .para{
-      height: 0 ;
+    .para {
+      height: 0;
       opacity: 0;
       padding: 0 1.1rem;
       overflow: hidden;
       text-align: justify;
       transition: all 0.6s ease-in-out;
 
-      &.active{
+      &.active {
         min-height: 150px;
-        opacity:1;
+        opacity: 1;
         @include flexCenter(column);
       }
 
-
-
-      p{
+      p {
         font-size: 1rem;
-        font-weight:100;
+        font-weight: 100;
       }
-
-
     }
-
   }
-
-
-
 }
